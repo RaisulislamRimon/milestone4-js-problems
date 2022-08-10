@@ -14,13 +14,19 @@ const marks = [85, 66, 95, 56, 40];
 
 for (let i = 0; i < marks.length; i++) {
   if (marks[i] >= 80) {
-    console.log(i, "A grade");
+    console.log(marks.indexOf(marks[i]));
+    console.log(`${marks[i]} => A`);
+    console.log(`${marks[i]} is an A grade`);
+    // console.log(i, "A grade");
   } else if (marks[i] >= 60) {
-    console.log(i, "B grade");
+    console.log(`${marks[i]} is a B grade`);
+    // console.log(i, "B grade");
   } else if (marks[i] >= 50) {
-    console.log(i, "C grade");
+    console.log(`${marks[i]} is a C grade`);
+    // console.log(i, "C grade");
   } else if (marks[i] >= 40) {
-    console.log(i, "D grade");
+    console.log(`${marks[i]} is a D grade`);
+    // console.log(i, "D grade");
   } else {
     console.log(i, "F grade");
   }
